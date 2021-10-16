@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+  /* background-color:#212121 ; */
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #030303;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 2;
+}
+
+.App-header-1{
+  /* display: flex; */
+  /* margin-left: 3em;
+  margin-right: 3em; */
+z-index: 1;
+/* background-color: rgb(214, 19, 221);
+height: 350px;
+width: 300px;
+opacity: 0.8; */
+
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+.Particles{
+  z-index: 0;
+}
+
+@keyframes changecolor {
+  /* from{ background-color: red;}
+to { background-color: yellow;} */
+
+/* it is much better to mention the from,to in terms of percentages, this way we can have more than one percentages  */
+/* ex: */
+0%{ background-color: initial;}
+
+50%{  background-color: rgb(251, 255, 0);border-radius: 20px;color:black}  
+}
+
+ .site-title-h1{
+  margin: 0.5rem;
+  border: none;
+  /* transition-property: height,width,background-color;
+  transition-duration: 2s; */
+  /* transition-delay: 500ms; */
+  animation-name: changecolor;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+
+  animation-delay: 2s; 
+  animation-iteration-count: infinite;
+
+
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* *****************Lec-20***************************  */
+/* Styling in react  */
+
+/* Method-1 : To use a external css sheet  */
+/* body{
+  background-color: black;
+} */
+.method-1{
+  color:orange;
+}
+
+.img_resize {
+  max-width: 100%;
+  height: 350px;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
+}
+
+.flex-blog{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-content{
+  /* border:1px solid black; */
+margin-left: 25%;
+margin-right: 25%;
+color: aqua;
+}
+li{
+  /* border:1px solid red; */
+  list-style-type: none;
+}
+li:hover{
+  background-color: aqua;
+  border-radius: 5px;
+}
+nav{
+  border: 1px solid black;
+  margin-left: 30vw;
+  /* margin-left: -200px; */
+  height: fit-content;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+nav:hover{
+  background-color: yellow;
+}
+
+/* ----------------------TODO-LIST--------------------------- */
+.TODO_NAV{ 
+  display: flex;
+ height: 50px;
+  /* margin-top: -25px; */
+  background-color: black;
+justify-content: space-between;
+ 
+  } 
+  .NAV_HEADING{
+    margin: auto;
+    margin-top: -0.05em;
+    display: inline;
+    color: #c49b3b;
+    animation-name: changecolor1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+  
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+  }
+  .NAV_IMAGE{
+    height: auto;
+    /* width: 50px; */
+    border: 1px solid white;
+  }
+  @keyframes changecolor1 {
+    /* from{ background-color: red;}
+  to { background-color: yellow;} */
+  
+  /* it is much better to mention the from,to in terms of percentages, this way we can have more than one percentages  */
+  /* ex: */
+  0%{ background-color: initial;}
+  
+  50%{  border-radius: 20px;color: white}  
+  }
